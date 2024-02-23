@@ -11,12 +11,13 @@ import {
     isSameDay, parse, addDays
 } from 'date-fns';
 import {Icon} from '@iconify/react';
+import '../index.css';
 
 const RenderHeader = ({currentMonth, prevMonth, nextMonth}) =>{
     return (
         <>
-            <div className="header row">
-                <div className="col col-start">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                <div className="block">
                     <span className="text">
                         <span className="text month">
                             {format(currentMonth, 'M')}월
